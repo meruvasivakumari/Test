@@ -12,5 +12,6 @@
 {
 IBOutlet UITextView *test;
 }
+- (BOOL) checkEvenNumber:(int)number;
 @end
 

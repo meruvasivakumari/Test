@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
 @interface TestTests : XCTestCase
 
@@ -17,6 +18,7 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    
 }
 
 - (void)tearDown {
@@ -24,6 +26,11 @@
     [super tearDown];
 }
 
+- (void)testCheckEvenNumber {
+    ViewController *vc = [ViewController new];
+    XCTAssertTrue([vc checkEvenNumber:4]);
+    
+}
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.

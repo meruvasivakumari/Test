@@ -29,6 +29,14 @@
     test.scrollEnabled = false;
   }
 
+- (BOOL) checkEvenNumber:(int)number {
+    
+    if (number % 2 == 0) {
+        return true;
+    }
+    return false;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
