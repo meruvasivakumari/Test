@@ -28,7 +28,7 @@
 
 - (void)testCheckEvenNumber {
     ViewController *vc = [ViewController new];
-    XCTAssertTrue([vc checkEvenNumber:5]);
+    XCTAssertTrue([vc checkEvenNumber:4]);
     
 }
 - (void)testExample {
