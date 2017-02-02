@@ -29,7 +29,7 @@
     test.scrollEnabled = false;
     
     
-    NSLog(@"Test Branch-11")
+    NSLog(@"Test Branch-11 Update")
   }
 
 - (BOOL) checkEvenNumber:(int)number {
