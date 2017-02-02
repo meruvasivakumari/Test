@@ -27,6 +27,9 @@
     test.attributedText = str;
     test.editable = false;
     test.scrollEnabled = false;
+    
+    
+    NSLog(@"Test Branch-11 testing repo success");
   }
 
 - (BOOL) checkEvenNumber:(int)number {
