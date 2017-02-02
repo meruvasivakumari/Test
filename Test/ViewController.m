@@ -29,7 +29,7 @@
     test.scrollEnabled = false;
     
     
-    NSLog(@"Test Branch-11 testing repo success");
+    NSLog(@"Test Branch-11 testing repo merge conflicts");
   }
 
 - (BOOL) checkEvenNumber:(int)number {
