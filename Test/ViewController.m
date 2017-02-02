@@ -29,7 +29,7 @@
     test.scrollEnabled = false;
     
     
-    NSLog(@"Test Branch-11 Update admin list")
+    NSLog(@"Test Branch-11 testing repo")
   }
 
 - (BOOL) checkEvenNumber:(int)number {
