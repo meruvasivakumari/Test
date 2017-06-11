@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='TestUITests.xctest' tests='3' failures='1'>
+  <testsuite name='TestTests' tests='2' failures='1'>
+    <testcase classname='TestTests' name='testCheckEvenNumber_False'>
+      <failure message='(([vc checkEvenNumber:4]) is false) failed'>TestTests/TestTests.m:37</failure>
+    </testcase>
+    <testcase classname='TestTests' name='testCheckEvenNumber_True' time='0.000'/>
+  </testsuite>
+  <testsuite name='TestUITests' tests='1' failures='0'>
+    <testcase classname='TestUITests' name='testExample' time='11.534'/>
+  </testsuite>
+</testsuites>
