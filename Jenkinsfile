@@ -10,7 +10,7 @@ doGenerateSubmoduleConfigurations: false,
 extensions: [], submoduleCfg: [],
 userRemoteConfigs: [[
 name: 'github',
-url: 'https://github.com/meruvasivakumari/Test.git'
+url: 'https://github.com/meruvasivakumari/Test'
 ]]
 ])
 
