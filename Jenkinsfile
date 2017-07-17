@@ -18,13 +18,4 @@ node {
         sh 'xcodebuild -target Test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO'
     }
 
-    stage('Analytics') {
-        
-        Checkstyle: {
-
-            // Generate Checkstyle report
-            sh 'swiftlint lint --reporter json'
-        }
-    }
-
 }
