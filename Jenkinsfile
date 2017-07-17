@@ -16,7 +16,6 @@ node {
 
         // Build and Test
         sh 'xcodebuild -target Test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO'
-
     }
 
     stage('Analytics') {
@@ -28,7 +27,7 @@ node {
     
             // Publish checkstyle result
             step([$class: 'CheckStylePublisher', canComputeNew: false, defaultEncoding: '', healthy: '', pattern: 'checkstyle.xml', unHealthy: ''])
-        }, failFast: true|false   
+        }   
     }
 
 }
