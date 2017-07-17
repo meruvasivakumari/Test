@@ -10,7 +10,7 @@ node('iOS Node') {
             extensions: [], submoduleCfg: [],
             userRemoteConfigs: [[
                 name: 'github',
-                url: 'https://github.com/meruvasivakumari/Test'
+                url: 'https://github.com/mmorejon/time-table.git'
             ]]
         ])
 
@@ -25,7 +25,7 @@ node('iOS Node') {
         
         parallel Coverage: {
             // Generate Code Coverage report
-            sh '/usr/local/bin/slather coverage --jenkins --html --scheme Test Test.xcodeproj/'
+            sh '/usr/local/bin/slather coverage --jenkins --html --scheme TimeTable TimeTable.xcodeproj/'
     
             // Publish coverage results
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'html', reportFiles: 'index.html', reportName: 'Coverage Report'])
@@ -41,4 +41,8 @@ node('iOS Node') {
         }, failFast: true|false   
     }
 
+    stage ('Notify') {
+        // Send slack notification
+        slackSend channel: '#my-team', message: 'Time Table - Successfully', teamDomain: 'my-team', token: 'my-token'
+    }
 }
