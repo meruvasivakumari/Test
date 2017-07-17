@@ -23,7 +23,7 @@ node {
         Checkstyle: {
 
             // Generate Checkstyle report
-            sh '/usr/local/bin/swiftlint lint --reporter json
+            sh '/usr/local/bin/swiftlint lint --reporter json'
         }
     }
 
