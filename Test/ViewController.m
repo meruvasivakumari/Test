@@ -28,7 +28,7 @@
     test.editable = false;
     test.scrollEnabled = false;
     
-    NSLog(@"Testing repo merge conflicts");
+    NSLog(@"Test PR");
   }
 
 - (BOOL) checkEvenNumber:(int)number {
