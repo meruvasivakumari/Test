@@ -28,7 +28,7 @@
     test.editable = false;
     test.scrollEnabled = false;
     
-    NSLog(@"TestBranch-1");
+    NSLog(@"Test PR");
   }
 
 - (BOOL) checkEvenNumber:(int)number {
