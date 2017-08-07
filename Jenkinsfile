@@ -5,7 +5,7 @@ node {
         // Checkout files.
         checkout([
             $class: 'GitSCM',
-            branches: [[name: 'master']],
+            branches: [[name: 'TestBranch-2']],
             doGenerateSubmoduleConfigurations: false,
             extensions: [], submoduleCfg: [],
             userRemoteConfigs: [[
@@ -15,7 +15,17 @@ node {
         ])
 
         // Build and Test
-        sh 'xcodebuild -target Test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO'
+        sh 'xcodebuild test -scheme Test -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2''
+    }
+    stage('Analytics') {
+
+        parallel Coverage: {
+        // Generate Code Coverage report
+        sh '/usr/local/bin/slather coverage --jenkins --html --scheme Test Test.xcodeproj/'
+
+        // Publish coverage results
+        publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'html', reportFiles: 'index.html', reportName: 'Coverage Report'])
+
     }
 
 }
