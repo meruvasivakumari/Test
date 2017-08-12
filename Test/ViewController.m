@@ -28,7 +28,7 @@
     test.editable = false;
     test.scrollEnabled = false;
     
-    NSLog(@"Test PR");
+    NSLog(@"Master test PR");
   }
 
 - (BOOL) checkEvenNumber:(int)number {
