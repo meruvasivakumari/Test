@@ -1,0 +1,5 @@
+# .slather.yml
+coverage_service: html
+xcodeproj: ./Test.xcodeproj
+scheme: Test
+output_directory: ./test-reports

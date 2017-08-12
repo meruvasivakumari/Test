@@ -14,19 +14,14 @@
 		CA32F0101DE4B9A00073A74F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA32F00F1DE4B9A00073A74F /* Assets.xcassets */; };
 		CA32F0131DE4B9A00073A74F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA32F0111DE4B9A00073A74F /* LaunchScreen.storyboard */; };
 		CA32F01E1DE4B9A00073A74F /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA32F01D1DE4B9A00073A74F /* TestTests.m */; };
-		CA32F0291DE4B9A00073A74F /* TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA32F0281DE4B9A00073A74F /* TestUITests.m */; };
+		CA74AE361F38F25800F39C8C /* .slather.yml in Resources */ = {isa = PBXBuildFile; fileRef = CA74AE351F38F25800F39C8C /* .slather.yml */; };
 		CAD7DE151F169F0600C3F4A6 /* Jenkinsfile in Resources */ = {isa = PBXBuildFile; fileRef = CAD7DE141F169F0600C3F4A6 /* Jenkinsfile */; };
+		CAEE0DCA1F3B8A9500AB4E6D /* TestingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEE0DC91F3B8A9500AB4E6D /* TestingAppDelegate.m */; };
+		CAEE0DE41F3C234800AB4E6D /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEE0DE31F3C234800AB4E6D /* ViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CA32F01A1DE4B9A00073A74F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CA32EFF81DE4B9A00073A74F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CA32EFFF1DE4B9A00073A74F;
-			remoteInfo = Test;
-		};
-		CA32F0251DE4B9A00073A74F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CA32EFF81DE4B9A00073A74F /* Project object */;
 			proxyType = 1;
@@ -49,10 +44,12 @@
 		CA32F0191DE4B9A00073A74F /* TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA32F01D1DE4B9A00073A74F /* TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTests.m; sourceTree = "<group>"; };
 		CA32F01F1DE4B9A00073A74F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA32F0241DE4B9A00073A74F /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA32F0281DE4B9A00073A74F /* TestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUITests.m; sourceTree = "<group>"; };
-		CA32F02A1DE4B9A00073A74F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA74AE351F38F25800F39C8C /* .slather.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .slather.yml; sourceTree = "<group>"; };
 		CAD7DE141F169F0600C3F4A6 /* Jenkinsfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jenkinsfile; sourceTree = "<group>"; };
+		CAEE0DC81F3B8A9500AB4E6D /* TestingAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingAppDelegate.h; sourceTree = "<group>"; };
+		CAEE0DC91F3B8A9500AB4E6D /* TestingAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingAppDelegate.m; sourceTree = "<group>"; };
+		CAEE0DE21F3C234800AB4E6D /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		CAEE0DE31F3C234800AB4E6D /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,23 +67,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA32F0211DE4B9A00073A74F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		CA32EFF71DE4B9A00073A74F = {
 			isa = PBXGroup;
 			children = (
+				CA74AE351F38F25800F39C8C /* .slather.yml */,
 				CAD7DE141F169F0600C3F4A6 /* Jenkinsfile */,
 				CA32F0021DE4B9A00073A74F /* Test */,
 				CA32F01C1DE4B9A00073A74F /* TestTests */,
-				CA32F0271DE4B9A00073A74F /* TestUITests */,
 				CA32F0011DE4B9A00073A74F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,7 +86,6 @@
 			children = (
 				CA32F0001DE4B9A00073A74F /* Test.app */,
 				CA32F0191DE4B9A00073A74F /* TestTests.xctest */,
-				CA32F0241DE4B9A00073A74F /* TestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,13 +95,17 @@
 			children = (
 				CA32F0061DE4B9A00073A74F /* AppDelegate.h */,
 				CA32F0071DE4B9A00073A74F /* AppDelegate.m */,
-				CA32F0091DE4B9A00073A74F /* ViewController.h */,
 				CA32F00A1DE4B9A00073A74F /* ViewController.m */,
+				CA32F0091DE4B9A00073A74F /* ViewController.h */,
 				CA32F00C1DE4B9A00073A74F /* Main.storyboard */,
 				CA32F00F1DE4B9A00073A74F /* Assets.xcassets */,
 				CA32F0111DE4B9A00073A74F /* LaunchScreen.storyboard */,
 				CA32F0141DE4B9A00073A74F /* Info.plist */,
 				CA32F0031DE4B9A00073A74F /* Supporting Files */,
+				CAEE0DC81F3B8A9500AB4E6D /* TestingAppDelegate.h */,
+				CAEE0DC91F3B8A9500AB4E6D /* TestingAppDelegate.m */,
+				CAEE0DE21F3C234800AB4E6D /* ViewController2.h */,
+				CAEE0DE31F3C234800AB4E6D /* ViewController2.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -132,15 +125,6 @@
 				CA32F01F1DE4B9A00073A74F /* Info.plist */,
 			);
 			path = TestTests;
-			sourceTree = "<group>";
-		};
-		CA32F0271DE4B9A00073A74F /* TestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CA32F0281DE4B9A00073A74F /* TestUITests.m */,
-				CA32F02A1DE4B9A00073A74F /* Info.plist */,
-			);
-			path = TestUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,24 +165,6 @@
 			productReference = CA32F0191DE4B9A00073A74F /* TestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CA32F0231DE4B9A00073A74F /* TestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CA32F0331DE4B9A00073A74F /* Build configuration list for PBXNativeTarget "TestUITests" */;
-			buildPhases = (
-				CA32F0201DE4B9A00073A74F /* Sources */,
-				CA32F0211DE4B9A00073A74F /* Frameworks */,
-				CA32F0221DE4B9A00073A74F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CA32F0261DE4B9A00073A74F /* PBXTargetDependency */,
-			);
-			name = TestUITests;
-			productName = TestUITests;
-			productReference = CA32F0241DE4B9A00073A74F /* TestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,11 +180,6 @@
 						ProvisioningStyle = Manual;
 					};
 					CA32F0181DE4B9A00073A74F = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 39WHKQ39LE;
-						TestTargetID = CA32EFFF1DE4B9A00073A74F;
-					};
-					CA32F0231DE4B9A00073A74F = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 39WHKQ39LE;
 						TestTargetID = CA32EFFF1DE4B9A00073A74F;
@@ -240,7 +201,6 @@
 			targets = (
 				CA32EFFF1DE4B9A00073A74F /* Test */,
 				CA32F0181DE4B9A00073A74F /* TestTests */,
-				CA32F0231DE4B9A00073A74F /* TestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA32F0131DE4B9A00073A74F /* LaunchScreen.storyboard in Resources */,
+				CA74AE361F38F25800F39C8C /* .slather.yml in Resources */,
 				CAD7DE151F169F0600C3F4A6 /* Jenkinsfile in Resources */,
 				CA32F0101DE4B9A00073A74F /* Assets.xcassets in Resources */,
 				CA32F00E1DE4B9A00073A74F /* Main.storyboard in Resources */,
@@ -258,13 +219,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CA32F0171DE4B9A00073A74F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CA32F0221DE4B9A00073A74F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,6 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA32F00B1DE4B9A00073A74F /* ViewController.m in Sources */,
+				CAEE0DCA1F3B8A9500AB4E6D /* TestingAppDelegate.m in Sources */,
+				CAEE0DE41F3C234800AB4E6D /* ViewController2.m in Sources */,
 				CA32F0081DE4B9A00073A74F /* AppDelegate.m in Sources */,
 				CA32F0051DE4B9A00073A74F /* main.m in Sources */,
 			);
@@ -292,14 +248,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA32F0201DE4B9A00073A74F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA32F0291DE4B9A00073A74F /* TestUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -307,11 +255,6 @@
 			isa = PBXTargetDependency;
 			target = CA32EFFF1DE4B9A00073A74F /* Test */;
 			targetProxy = CA32F01A1DE4B9A00073A74F /* PBXContainerItemProxy */;
-		};
-		CA32F0261DE4B9A00073A74F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CA32EFFF1DE4B9A00073A74F /* Test */;
-			targetProxy = CA32F0251DE4B9A00073A74F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -475,28 +418,6 @@
 			};
 			name = Release;
 		};
-		CA32F0341DE4B9A00073A74F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.allstate.TestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Test;
-			};
-			name = Debug;
-		};
-		CA32F0351DE4B9A00073A74F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.allstate.TestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Test;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -523,15 +444,6 @@
 			buildConfigurations = (
 				CA32F0311DE4B9A00073A74F /* Debug */,
 				CA32F0321DE4B9A00073A74F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CA32F0331DE4B9A00073A74F /* Build configuration list for PBXNativeTarget "TestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CA32F0341DE4B9A00073A74F /* Debug */,
-				CA32F0351DE4B9A00073A74F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
