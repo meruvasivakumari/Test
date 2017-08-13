@@ -28,7 +28,7 @@
     test.editable = false;
     test.scrollEnabled = false;
     
-    NSLog(@"Testing repo merge conflicts");
+    NSLog(@"Test blue ocean");
   }
 
 - (BOOL) checkEvenNumber:(int)number {
