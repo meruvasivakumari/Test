@@ -28,7 +28,7 @@
     test.editable = false;
     test.scrollEnabled = false;
     
-    NSLog(@"Test blue ocean fail buid")
+    NSLog(@"Test branch master")
   }
 
 - (BOOL) checkEvenNumber:(int)number {
