@@ -5,11 +5,7 @@ node {
         // Checkout files.
         checkout([
             $class: 'GitSCM',
-            if(env.BRANCH_NAME ==~ /^PR-\d+$/){
-                env['CHANGE_ID']
-            } else {
-                branches: [[name:  env.BRANCH_NAME]]
-            },
+            branches: [[name:  env.BRANCH_NAME]]
             doGenerateSubmoduleConfigurations: false,
             extensions: [], submoduleCfg: [],
             userRemoteConfigs: [[
